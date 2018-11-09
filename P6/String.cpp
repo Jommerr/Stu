@@ -3,7 +3,7 @@
 String::String()
 {
 	m_Data = "";
-	m_Lenth = 0;
+	m_Lenth = 0;//ä¸²çš„é•¿åº¦
 }
 
 String::String(char * Data)
@@ -26,7 +26,7 @@ int String::Lenth()
 }
 
 bool String::IsEmpty()
-{//¿Õ·µ»Ø1 ·´Ö®0
+{//ç©ºè¿”å›1 åä¹‹0
 	return !m_Lenth;
 }
 
@@ -38,7 +38,7 @@ void String::Clear()
 }
 
 String & String::SubStr(int pos, int end)
-{//ÆğÊ¼Î»ÖÃ1 Î»ÖÃ°üÀ¨pos£¬²»°üÀ¨end
+{//èµ·å§‹ä½ç½®1 ä½ç½®åŒ…æ‹¬posï¼Œä¸åŒ…æ‹¬end
 	if (pos < 1 || end > this->m_Lenth)
 	{
 		return String();
